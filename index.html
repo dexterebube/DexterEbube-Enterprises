@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Sign In - DexterEbube Enterprises</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/639d350efb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="nameInput" placeholder="Name" required>
+                    </div>
+                    <div class="input-field" id="emailField">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="emailInput" placeholder="Email" required>
+                    </div>
+                    <div class="input-field" id="passwordField">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="passwordInput" placeholder="Password" required>
+                        <span class="tooltip">Password length must be at least 8 characters</span>
+                    </div>
+                    <p>Lost Password? <a href="#">Click Here!</a></p>
+                    <div id="recaptcha" class="g-recaptcha" data-sitekey="6LdBAusqAAAAAOM1YCB3zI7vaj4q4HHqJMpY3Ylh"></div>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn" onclick="toggleMode(false)">Sign Up</button>
+                    <button type="button" id="signinBtn" class="disable" onclick="toggleMode(true)">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
